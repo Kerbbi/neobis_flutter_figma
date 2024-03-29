@@ -3,53 +3,22 @@
 import 'package:flutter/material.dart';
 import 'package:neobis_flutter_figma/core/constants/app_colors.dart';
 import 'package:neobis_flutter_figma/core/constants/text_styles.dart';
+import 'package:neobis_flutter_figma/presentation/widgets/custom_search_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home Screen'),
         automaticallyImplyLeading: false,
-        backgroundColor: AppColors.primaryColor,
+        backgroundColor: AppColors.firstMainColor,
         elevation: 0.0,
-        actions: const [
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 8.0),
-            child: Row(
-              children: [
-                Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      'Торговая точка',
-                      style: AppTextStyles.appBarSubtitleTextStyle,
-                    ),
-                    SizedBox(height: 8),
-                    Row(
-                      children: [
-                        Text(
-                          'Проход 456а',
-                          style: AppTextStyles.appBarTitleTextStyle,
-                        ),
-                        Spacer(),
-                        Text(
-                          'Торговая точка',
-                          style: AppTextStyles.appBarSubtitleTextStyle,
-                        ),
-
-                        // Image.asset('assets/next_arrow_icon.png'),
-                      ],
-                    ),
-                  ],
-                ),
-              ],
-            ),
-          ),
-        ],
+        title: CustomSearchWidget(),
       ),
-      body: const Center(
-        child: Column(
+      body:  Container(
+        width: double.infinity,
+        color:AppColors.firstMainColor,
+        child: const Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(

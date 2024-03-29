@@ -13,21 +13,21 @@ class AppTextStyles {
   static const TextStyle appBarTitleTextStyle = TextStyle(
     fontFamily: 'Nunito',
     fontWeight: FontWeight.w700,
-    color: AppColors.mainBlackTextColor,
+    color: AppColors.firstMainColor,
     fontSize: 18.0,
   );
 
   static const TextStyle appBarSubtitleTextStyle = TextStyle(
     fontFamily: 'Nunito',
     fontWeight: FontWeight.w400,
-    color: AppColors.mainGrayTextColor,
+    color: AppColors.searchWidgetBackgroundColor,
     fontSize: 14.0,
   );
 
   static const TextStyle appBarActionTextStyle = TextStyle(
     fontFamily: 'Nunito',
     fontWeight: FontWeight.w600,
-    color: AppColors.mainBlackTextColor,
+    color: AppColors.firstMainColor,
     fontSize: 14.0,
   );
 }
