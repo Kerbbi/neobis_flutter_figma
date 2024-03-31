@@ -63,6 +63,9 @@ flutter:
     - assets/next_arrow_icon.png
     - assets/search_icon.png
     - assets/filter_icon.png
+    - assets/grid_view_icon.png
+    - assets/list_view_icon.png
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -79,6 +82,9 @@ flutter:
      - family: Nunito
        fonts:
         - asset: fonts/nunito-sans-regular.ttf
+     - family: Roboto
+       fonts:
+        - asset: fonts/roboto-regular.ttf
 
 
 

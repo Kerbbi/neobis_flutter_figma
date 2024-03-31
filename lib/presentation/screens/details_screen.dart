@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:neobis_flutter_figma/core/constants/text_styles.dart';
+import 'package:neobis_flutter_figma/core/constants/app_text_styles.dart';
 
 class SecondScreen extends StatelessWidget {
   @override
