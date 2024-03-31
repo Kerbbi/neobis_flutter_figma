@@ -1,28 +1,39 @@
 import 'package:flutter/material.dart';
-import 'package:neobis_flutter_figma/core/constants/app_text_styles.dart';
 
-class SecondScreen extends StatelessWidget {
+class DetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Second Screen'),
-      ),
-      body: const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'Welcome to Second Screen',
-              style: AppTextStyles.headerStyle,
-            ),
-            SizedBox(height: 20),
-            Text(
-              'This is your second screen content.',
-              style: AppTextStyles.bodyStyle,
-            ),
-          ],
-        ),
+      body: Column(
+        // mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Stack(
+            children: [
+              Container(
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('assets/img.png'),
+                  ),
+                ),
+              ),
+              Positioned(
+                top: 20,
+                left: 20,
+                child: IconButton(
+                  onPressed: () {
+                    // Add onPressed action here
+                  },
+                  icon: Image.asset(
+                    'assets/back_icon.png',
+                    width: 24, // Set the width according to your needs
+                    height: 24, // Set the height according to your needs
+                  ),
+                ),
+              ),
+            ],
+          ),
+          Text('test')
+        ],
       ),
     );
   }
