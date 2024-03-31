@@ -1,4 +1,4 @@
-# neobis_flutter_figma
+# neobis_flutter_rick_and_morty
 
 A new Flutter project.
 
